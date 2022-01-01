@@ -1,5 +1,8 @@
-console.log('HELLO');
+// const btnMobile = document.getElementById('btn-mobile');
 
-const test = () => {
-	console.log('this is a test');
-};
+// function toggleMenu() {
+// 	const nav = document.querySelector('.nav');
+// 	nav.classList.toggle('active')
+// };
+
+// btnMobile.addEventListener('click', toggleMenu);
