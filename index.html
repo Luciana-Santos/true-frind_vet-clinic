@@ -15,19 +15,36 @@
 		
 	</head>
 	<body>
-		<header class="header-flex">
-			<div class="header container">
+		<!-- cabeçalho -->
+		<header class="header">
+			<nav class="container nav">
+				<!-- logo -->
 				<a href="index.html" class="logo"><img src="img/paw-solid.svg" alt=""></a>
 
-			<nav class="nav">
-				<!-- <i class="fas fa-bars" id="btn-mobile"></i> -->
-				<ul class="menu">
-					<li><a href="/">Institucional</a></li>
-					<li><a href="/">Doar</a></li>
-					<li><a href="/">Adote</a></li>
-				</ul>
+				<!-- menu aberto -->
+				<div class="menu-aberto">
+					<!-- <span class="menu__mobile--overlay"></span> -->
+
+					<!-- icone fechar menu -->
+					<a href="#"  id="close-menu" class="close-menu">
+						<img src="img/menu-mobile__close.svg" alt="" class="icon_close-menu">
+					</a>
+
+					<!-- menu itens -->
+					<ul>
+						<li><a href="#">Ongs</a></li>
+						<li><a href="#">Doar</a></li>
+						<li><a href="#">Adote</a></li>
+					</ul>
+				</div>
+				<!-- fim menu aberto -->
+				
+				<!-- icone menu -->
+				<a href="#" id="open-menu"  class="open-menu">
+					<img src="img/menu-mobile_open.svg" alt="" class="open_close-menu">
+				</a>
 			</nav>
-		</div>
 		</header>
+		<!-- fim cabeçalho -->
 	</body>
 </html>
