@@ -1,0 +1,43 @@
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -100%;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 500ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    margin-left: 0;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    margin-left: -100%;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 500ms ease-in-out forwards;
+}

@@ -9,7 +9,8 @@
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="/dist/style.css" />
 		<script defer src="/dist/script.js"></script>
 		
@@ -17,13 +18,15 @@
 	<body>
 		<!-- cabeçalho -->
 		<header class="header">
+
+			<div class="overlay has-fade"></div>
+
 			<nav class="container nav">
 				<!-- logo -->
 				<a href="index.html" class="logo"><img src="img/paw-solid.svg" alt=""></a>
 
 				<!-- menu aberto -->
-				<div class="menu-aberto">
-					<!-- <span class="menu__mobile--overlay"></span> -->
+				<div class="menu-aberto has-fade" id="menu">
 
 					<!-- icone fechar menu -->
 					<a href="#"  id="close-menu" class="close-menu">
@@ -44,6 +47,11 @@
 					<img src="img/menu-mobile_open.svg" alt="" class="open_close-menu">
 				</a>
 			</nav>
+
+			<div class="header__title">
+				<h2>Vet Clinic</h2>
+				<h1>True Friend</h1>
+			</div>
 		</header>
 		<!-- fim cabeçalho -->
 	</body>
