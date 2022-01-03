@@ -1,11 +1,20 @@
 @use '../util' as *;
 
 .container {
-	padding: 0 rem(40);
+	padding: 0 rem(22);
 	max-width: rem(1076);
 	margin: 0 auto;
 
-	&-tab {
-		padding: 0 rem(40);
+	@include breakpoint(medium) {
+    padding: 0 rem(90);
+  }
+
+	@include breakpoint-down(small) {
+    padding: 0 rem(90);
+  }
+
+	@include breakpoint-down(x-small) {
+		padding: 0 rem(22);
 	}
+
 }

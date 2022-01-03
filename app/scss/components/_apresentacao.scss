@@ -1,0 +1,63 @@
+@use '../util' as *;
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  margin-top: rem(60);
+
+  .apresentacao__foto--dupla {
+      height: 330px;
+      background: url(../../../img/dog-man.jpeg) no-repeat right;
+      background-size: auto;
+      background-size: cover;
+  }
+
+  .apresentacao__foto--dog {
+      height: 330px;
+      background: url(../../../img/doggie.jpeg) no-repeat center;
+      background-size: auto;
+      background-size: cover;
+  } 
+
+  .apresentacao__call {
+    color: var(--white);
+    display: block;
+    background: var(--v-dark-grey);
+    padding: rem(30);
+
+    img {
+      width: rem(64);
+    }
+
+    h3 {
+      font-family: --font-playfair;
+      font-size: rem(36);
+      line-height: rem(39);
+      max-width: rem(300);
+      margin-bottom: rem(36);
+    }
+  }
+
+  .apresentacao__info {
+    padding: rem(30);
+    text-align: center;
+    max-width: rem(320);
+    place-self: center;
+    
+    p {
+      line-height: rem(25);
+      margin-top: rem(30);
+    }
+
+    .apresentacao__icon {
+      width: rem(64);
+      margin: 0 auto;
+    }
+  }
+
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

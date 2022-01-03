@@ -20,7 +20,6 @@
 
     .menu-mobile {
       display: block;
-      width: 60%;
       height: 100vh;
       background: rgba(0, 0, 0, .8);
       position: absolute;
@@ -30,25 +29,59 @@
       opacity: 0;
       visibility: hidden;
 
+      @include breakpoint(medium) {
+        visibility: hidden;
+        opacity: 0;
+      }
+
       &.ativo {
+      width: 60%;
       visibility: visible;
       opacity: 1;
+
+      @include breakpoint(medium) {
+        width: 30%;
+      }
       }
 
       ul {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
 
-        a {
-        color: var(--white);
-        display: block;
-        font-size: rem(20);
-        padding: rem(8) 0;
-
-        &:hover {
-          background: var(--med-grey);
+        li:not(:last-child) {
+          width: 100%;
         }
+
+        a:not(.call) {
+          display: block;
+          color: var(--white);
+          display: block;
+          font-size: rem(20);
+          padding: rem(8) 0;
+          margin-bottom: rem(10);
+          transition: .3s ease-in-out;
+
+          &:hover {
+            background: var(--orange);
+          }
+        }
+
+        .call {
+          display: block;
+          background: var(--orange);
+          border-radius: rem(30);
+          color: var(--white);
+          padding: rem(10) rem(20);
+
+          &:hover {
+          background: var(--light-orange);
+          }
         }
       }
+      
     }
 
     .icon_close-menu {
@@ -103,6 +136,11 @@
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, .7);
+
+    @include breakpoint(medium) {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 
   h2 {
