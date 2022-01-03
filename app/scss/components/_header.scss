@@ -87,5 +87,13 @@
 }
 
 .hide-mobile {
-  display: none;
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-desk {
+  @include breakpoint(large) {
+    display: none;
+  }
 }
