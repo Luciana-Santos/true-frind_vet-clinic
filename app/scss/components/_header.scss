@@ -1,5 +1,6 @@
 @use '../util' as *;
 
+
 .header {
   background: url(../../../img/header-dog.jpeg) no-repeat center;
   background-size: cover;
@@ -17,7 +18,7 @@
       width: rem(30);
     }
 
-    .menu-aberto {
+    .menu-mobile {
       display: block;
       width: 60%;
       height: 100vh;
@@ -83,5 +84,8 @@
     font-size: rem(60);
     font-weight: 700;
   }
-  
+}
+
+.hide-mobile {
+  display: none;
 }

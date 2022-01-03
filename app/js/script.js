@@ -1,7 +1,7 @@
 const openMenu = document.getElementById('open-menu');
 const closeMenu = document.getElementById('close-menu');
 const body = document.querySelector('body');
-const menu = document.getElementById('menu');
+const menu = document.getElementById('menu-mobile');
 const fadeElems = document.querySelectorAll('.has-fade');
 
 
