@@ -56,6 +56,42 @@
       width: rem(24);
       margin: rem(25) rem(20) rem(20) auto;
     }
+
+    .menu-desk {
+      
+      ul {
+        display: flex;
+
+        a {
+          font-size: rem(16);
+          color: var(--med-grey);
+          font-weight: 500;
+          transition: .3s ease-in-out;
+        }
+
+        a:not(.call) {
+          margin-right: rem(20);
+          padding: rem(10) rem(15);
+          border-bottom: 3px solid transparent;
+
+          &:hover {
+            border-color: #d38449;
+
+          }
+        }
+
+        .call {
+          background: var(--orange);
+          border-radius: rem(30);
+          color: var(--white);
+          padding: rem(10) rem(20);
+
+          &:hover {
+          background: var(--light-orange);
+          }
+        }
+      }
+    }
   }
 
   .overlay {
