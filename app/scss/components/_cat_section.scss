@@ -1,0 +1,26 @@
+@use '../util' as *;
+
+.cat_section {
+  height: rem(470);
+  background: url(../../../img/cat-blackbg.jpeg) no-repeat center;
+  background-size: cover;
+  color: var(--white);
+  padding-top: rem(70);
+
+  h3 {
+    font-size: rem(36);
+    margin-bottom: rem(20);
+    max-width: rem(372);
+  }
+
+  h4 {
+    font-size: rem(20);
+    text-transform: uppercase;
+    letter-spacing: rem(10);
+    margin-bottom: rem(70);
+  }
+
+  @include breakpoint(large) {
+    height: rem(570);
+  }
+}
