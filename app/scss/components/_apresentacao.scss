@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   place-content: center;
   margin-top: rem(60);
+  margin-bottom: rem(60);
 
   .apresentacao__foto--dupla {
       height: 330px;
@@ -22,8 +23,9 @@
 
   .apresentacao__call {
     color: var(--white);
-    display: block;
-    background: var(--v-dark-grey);
+    display: grid;
+    place-content: end;
+    background: var(--black);
     padding: rem(30);
 
     img {
@@ -31,10 +33,9 @@
     }
 
     h3 {
-      font-family: --font-playfair;
+      font-family: var(--font-playfair);
       font-size: rem(36);
       line-height: rem(39);
-      max-width: rem(300);
       margin-bottom: rem(36);
     }
   }

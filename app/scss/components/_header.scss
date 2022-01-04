@@ -158,6 +158,10 @@
     font-size: rem(60);
     font-weight: 700;
   }
+
+  @include breakpoint(large) {
+    height: 100vh;
+  }
 }
 
 .hide-mobile {
