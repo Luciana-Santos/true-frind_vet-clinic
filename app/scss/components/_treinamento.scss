@@ -3,9 +3,12 @@
 .treinamento {
 
   &__title {
+    display: grid;
+    place-content: end;
     background: var(--light-grey);
     padding: rem(30) rem(10);
     text-align: right;
+    flex: 1 1 339px;
 
     h4 {
       font-size: rem(20);
@@ -18,14 +21,38 @@
       font-size: rem(36);
       margin-bottom: 0;
     }
+
+    @include breakpoint(medium) {
+      padding: rem(30);
+    }
+  }
+
+  &__img {
+    flex: 1 1 383px;
+
+    img {
+      height: rem(490);
+      object-fit: cover;
+
+      @include breakpoint(medium) {
+        height: rem(575);
+      }
+    }
   }
 
   &__info {
+    display: grid;
+    align-content: end;
     padding: rem(30) rem(10);
+    flex: 1 1 249px;
 
     p {
       line-height: rem(25);
       margin: 0;
+
+      @include breakpoint(large) {
+      max-width: rem(319);
+      }
     }
 
     .socials {
@@ -40,5 +67,14 @@
         color: var(--black);
       }
     }
+
+    @include breakpoint(medium) {
+      padding: rem(30);
+    }
+  }
+
+  @include breakpoint(medium) {
+  display: flex;
+  flex-wrap: wrap;
   }
 }
