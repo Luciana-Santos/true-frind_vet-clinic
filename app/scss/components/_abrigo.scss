@@ -2,56 +2,54 @@
 
 .abrigo {
   background: var(--light-grey);
-  padding-top: rem(60);
-  padding-bottom: rem(60);
+  padding: rem(60) rem(22);
+
+  .flex {
+    display: flex;
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+    @include breakpoint(large){
+      padding-left: rem(90);
+      padding-right: rem(90);
+    }
+  }
 
   &__info {
     padding: rem(30) rem(10);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex: 1 1 30%;
 
     h4 {
       font-size: rem(20);
       letter-spacing: rem(10);
-      margin: 0;
       text-transform: uppercase;
+      margin-bottom: rem(20);
     }
 
     h3 {
       font-size: rem(36);
-      margin: 0;
-    }
-    
-    p{
-      max-width: rem(282);
-      margin: 0;
+      margin-bottom: rem(20);
     }
   }
 
   &__foto--dupla {
-    background: url(../../../img/dog-girl-bear.jpeg) no-repeat center;
-    background-size: cover;
-    min-height: 570px;
-    flex: 0 0 40%;
+    flex: 1 1 40%;
   }
 
   &__foto--urso {
-    background: var(--black);
     padding-top: rem(60);
-    flex: 0 0 30%;
+    flex: 1 1 30%;
     display: flex;
+    background: var(--black);
 
     img {
-    height: 225px;
-    align-self: flex-end;
+      align-self: flex-end;
     }
   }
 
-  @include breakpoint(medium) {
-    & .grid {
-      display: flex;
-    }
-    
+  @include breakpoint(large) {
+    flex-direction: row;
   }
 }
