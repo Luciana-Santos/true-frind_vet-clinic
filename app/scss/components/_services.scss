@@ -1,0 +1,69 @@
+@use '../util' as *;
+
+.services {
+  background: var(--v-light-grey);
+
+  .flex {
+    
+    @include breakpoint(medium) {
+      display: flex;
+    }
+  }
+
+  &__info {
+    flex: 1 1 360px;
+    display: grid;
+    align-content: center;
+    padding: rem(30) rem(10);
+
+    h3 {
+      font-size: rem(36);
+      margin-bottom: rem(10);
+    }
+
+    h4 {
+      font-size: rem(20);
+      letter-spacing: rem(10);
+      margin-bottom: rem(30);
+    }
+
+    p {
+      line-height: rem(25);
+      margin-bottom: rem(30);
+
+      @include breakpoint(medium) {
+        max-width: rem(390);
+      }
+    }
+
+    & .btn {
+      display: inline-block;
+      padding: rem(10) rem(50);
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: rem(3);
+      font-weight: 700;
+      background: var(--black);
+      width: max-content;
+      line-height: rem(25);
+
+      &:hover {
+        background: var(--med-grey);
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding: rem(30);
+      justify-content: end;
+    }
+
+    @include breakpoint(large) {
+      padding: rem(60);
+      justify-content: end;
+    }
+  }
+
+  &__img {
+    flex: 1 1 390px;
+  }
+}
