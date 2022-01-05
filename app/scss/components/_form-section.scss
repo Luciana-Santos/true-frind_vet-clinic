@@ -1,0 +1,54 @@
+@use '../util' as *;
+
+.form {
+  background: url(../../../img/puppie.jpg) no-repeat;
+  padding: rem(60) 0;
+  background-size: cover;
+  background-position: right;
+
+  .grid {
+    display: grid;
+    
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  &__info {
+    text-align: right;
+    grid-column: 2 / -1;
+    
+    h3 {
+      font-size: rem(36);
+      margin-bottom: rem(20);
+    }
+
+    p {
+      line-height: rem(25);
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__input {
+    display: flex;
+    gap: rem(15);
+    flex-direction: column;
+
+    input {
+      padding: rem(12);
+      font-size: rem(16);
+      outline: none;
+    }
+
+    button {
+      background: var(--black);
+      padding: rem(10) 0;
+      line-height: rem(25);
+      color: var(--white);
+      cursor: pointer;
+      font-size: rem(16);
+      border: none;
+      outline: none;
+    }
+  }
+}
