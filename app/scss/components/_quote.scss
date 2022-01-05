@@ -1,0 +1,27 @@
+@use '../util' as *;
+
+.quote {
+    padding: rem(60) 0;
+    background: var(--black);
+
+  p {
+    color: var(--white);
+    font-family: var(--font-playfair);
+    font-size: rem(36);
+    text-align: center;
+    margin-bottom: rem(30);
+  }
+
+  ul {
+    display: flex;
+    gap: rem(20);
+    justify-content: center;
+
+      a {
+        font-size: rem(20);
+        color: var(--white);
+        display: block;
+        padding: rem(5);
+      }
+  }
+}
