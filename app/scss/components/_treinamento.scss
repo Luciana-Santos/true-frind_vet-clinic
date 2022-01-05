@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+.treinamento {
+
+  &__title {
+    background: var(--light-grey);
+    padding: rem(30) rem(10);
+    text-align: right;
+
+    h4 {
+      font-size: rem(20);
+      letter-spacing: rem(10);
+      text-transform: uppercase;
+      margin-bottom: rem(20);
+    }
+
+    h3 {
+      font-size: rem(36);
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    padding: rem(30) rem(10);
+
+    p {
+      line-height: rem(25);
+      margin: 0;
+    }
+
+    .socials {
+      padding-top: rem(30);
+      display: flex;
+      gap: rem(20);
+
+      a {
+        font-size: rem(20);
+        display: block;
+        padding: rem(5);
+        color: var(--black);
+      }
+    }
+  }
+}
