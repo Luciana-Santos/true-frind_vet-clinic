@@ -1,0 +1,57 @@
+@use '../util' as *;
+
+.abrigo {
+  background: var(--light-grey);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+
+  &__info {
+    padding: rem(30) rem(10);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h4 {
+      font-size: rem(20);
+      letter-spacing: rem(10);
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: rem(36);
+      margin: 0;
+    }
+    
+    p{
+      max-width: rem(282);
+      margin: 0;
+    }
+  }
+
+  &__foto--dupla {
+    background: url(../../../img/dog-girl-bear.jpeg) no-repeat center;
+    background-size: cover;
+    min-height: 570px;
+    flex: 0 0 40%;
+  }
+
+  &__foto--urso {
+    background: var(--black);
+    padding-top: rem(60);
+    flex: 0 0 30%;
+    display: flex;
+
+    img {
+    height: 225px;
+    align-self: flex-end;
+    }
+  }
+
+  @include breakpoint(medium) {
+    & .grid {
+      display: flex;
+    }
+    
+  }
+}
