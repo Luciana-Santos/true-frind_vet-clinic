@@ -1,4 +1,4 @@
-# true-frind_vet-clinic
+# true frind - vet clinic
 
 Apenas um estudo de frontend.
 
